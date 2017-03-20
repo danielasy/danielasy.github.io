@@ -28,6 +28,14 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-polyglot
+  - jekyll-seo-tag
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Language preferences (Polyglot)
+languages: [ "en", "pt" ]
+default_lang: "en"
+exclude_from_localization: [ "javascript", "images", "css" ]
+parallel_localization: true
