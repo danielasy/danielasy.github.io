@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Daniela Sayuri Yassuda
 email: danielayassuda@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Daniela Sayuri Yassuda. Electrical and Computer Engineering undergrad @
   University of São Paulo. Fullstack development intern @ Chaordic.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -25,7 +25,6 @@ github_username:  danielasy
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
   - jekyll-polyglot
@@ -36,6 +35,6 @@ exclude:
 
 # Language preferences (Polyglot)
 languages: [ "en", "pt" ]
-default_lang: "en"
-exclude_from_localization: [ "javascript", "images", "css" ]
+default_lang: "pt"
+exclude_from_localization: [ "images", "styles" ]
 parallel_localization: true
