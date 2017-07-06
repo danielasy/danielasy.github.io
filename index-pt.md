@@ -1,5 +1,7 @@
 ---
 layout: home
+navigation: /
+permalink: /
 lang: pt
 ---
 
