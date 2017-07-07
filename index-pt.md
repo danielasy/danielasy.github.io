@@ -1,6 +1,6 @@
 ---
 layout: home
-navigation: /
+original_permalink: /
 permalink: /
 lang: pt
 ---
