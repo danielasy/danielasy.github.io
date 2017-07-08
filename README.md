@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Set up [Jekyll][https://jekyllrb.com/]:
+Set up [Jekyll](https://jekyllrb.com/):
 
 ```
 gem install jekyll bundler
@@ -18,6 +18,15 @@ bundle install
 
 ```
 bundle exec jekyll serve
+```
+
+## Build and deploy
+
+```
+bundle exec jekyll build
+git add _site
+git commit -m "Update"
+git subtree push --prefix _site origin master
 ```
 
 ## License
