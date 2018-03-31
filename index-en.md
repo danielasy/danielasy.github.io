@@ -7,4 +7,4 @@ lang: en
 
 # Daniela Sayuri Yassuda
 
-Electrical and Computer Engineering undergrad at University of São Paulo
+Full-stack developer. Software Engineer at Grupo Cerebral. Electrical and Computer Engineering class of 2017 at University of São Paulo.

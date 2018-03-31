@@ -1,93 +1,143 @@
+/**
+ *  Base
+ */
 html {
   width: 100%;
   height: 100%;
+  color: #3E3E3E;
 }
 
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #fefbf4;
-  background-image: url('../images/plaid.jpg');
-  /* Background pattern by Alexey Tretina http://thepatternlibrary.com/#plaid */
+  background-color: #F5E2C8;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content {
+  position: relative;
+  padding: 0 32px;
+}
+
+/**
+ *  Header and navigation
+ */
+.header {
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+  padding: 24px 16px;
 }
 
-.home {
-  width: 100%;
-  padding: 20px 0;
-}
-
-.introduction h1 {
-  color: #92262a;
-  font-family: 'Droid Serif', serif;
-  font-size: 48px;
-  margin: 30px 0;
-}
-
-.contact {
-  width: 100%;
-  padding: 50px 0;
-}
-
-.contact p {
-  padding-bottom: 30px;
-}
-
-.contact .email-icon {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
-
-.contact .link-icon {
-  width: 32px;
-  height: 32px;
-  background-size: 32px 32px;
+.navigation li {
   display: inline-block;
-  margin: 0 5px;
+  font-weight: 600;
+  padding: 0 16px;
 }
 
-.link-icon.github-icon {
-  background-image: url('/images/github.png');
+.navigation a {
+  color: #B75D69;
+  text-decoration: none;
 }
 
-.link-icon.linkedin-icon {
-  background-image: url('/images/linkedin.png');
+.navigation a:hover,
+.navigation a:focus {
+  color: #E5A5A5;
+  text-decoration: underline;
 }
 
 .language-switcher {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 14px;
-  padding: 10px 15px;
+  font-size: 0.875rem;
 }
 
 .language-switcher a {
-  color: #5d5d5d;
+  color: #5D5D5D;
   padding: 0px 10px;
   text-decoration: none;
 }
 
 .language-switcher a:hover,
 .language-switcher a:focus {
-  color: #01588e;
+  color: #774C60;
   text-decoration: underline;
 }
 
 .language-switcher a.active-language {
-  color: #c4242a;
-  font-weight: bold;
+  color: #B75D69;
+  font-weight: 600;
+}
+
+/**
+ *  Pages
+ */
+.home {
+  width: 100%;
+  padding-top: 128px;
+}
+
+.introduction {
+  max-width: 600px;
+  line-height: 1.5rem;
+}
+
+.introduction h1 {
+  color: #774C60;
+  font-family: 'Raleway', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin-bottom: 30px;
+}
+
+.contact {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.contact a {
+  text-decoration: none;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  color: #B75D69;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .home {
+    padding-left: 10%;
+  }
+}
+
+.not-found {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Raleway', serif;
+  text-align: center;
+}
+
+.not-found h1 {
+  color: #774C60;
+  font-size: 3rem;
+  margin-right: 16px;
+}
+
+.not-found h2 {
+  color: #B75D69;
+  font-size: 2rem;
 }

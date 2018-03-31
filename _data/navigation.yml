@@ -1,0 +1,10 @@
+en:
+  - title: Home
+    permalink: /en
+  - title: About
+    permalink: /en/about
+pt:
+  - title: Início
+    permalink: /
+  - title: Sobre
+    permalink: /about

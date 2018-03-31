@@ -1,3 +1,13 @@
-<div class="language-switcher">
-  <a {% if site.active_lang == "pt" %}class="active-language"{% endif %} href="..{{page.original_permalink}}">Português</a> | <a {% if site.active_lang == "en" %}class="active-language"{% endif %} href="../en{{page.original_permalink}}">English</a>
-</div>
+<header class="header">
+  <nav class="navigation">
+    <ul>
+      {% for page in site.data.navigation[site.active_lang] %}
+      <li><a href=" {{page.permalink}}">{{page.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  </nav>
+  <div class="language-switcher">
+    <a {% if site.active_lang == "pt" %}class="active-language"{% endif %} href=" {{page.permalink}}">Português</a> | <a {% if site.active_lang == "en" %}class="active-language"{% endif %} href=" /en{{page.permalink}}">English</a>
+  </div>
+</header>
