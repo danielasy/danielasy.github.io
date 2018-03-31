@@ -15,6 +15,12 @@ body {
 }
 
 .content {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
   position: relative;
   padding: 0 32px;
 }
@@ -24,10 +30,15 @@ body {
  */
 .header {
   width: 100%;
+  max-width: 1920px;
   display: flex;
   justify-content: space-between;
   font-family: 'Raleway', sans-serif;
   padding: 24px 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .navigation li {
@@ -68,12 +79,17 @@ body {
   font-weight: 600;
 }
 
+@media only screen and (min-width: 120em) {
+  .header {
+    left: calc((100% - 1920px)/2);
+  }
+}
+
 /**
  *  Pages
  */
 .home {
   width: 100%;
-  padding-top: 128px;
 }
 
 .introduction {
@@ -117,6 +133,31 @@ body {
 
 @media only screen and (min-width: 56.25em) {
   .home {
+    padding-left: 10%;
+  }
+}
+
+.page {
+  width: 100%;
+  max-width: 700px;
+  line-height: 1.5rem;
+}
+
+.page h1 {
+  color: #774C60;
+  font-family: 'Raleway', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin-bottom: 30px;
+}
+
+.page p {
+  padding-bottom: 16px;
+}
+
+@media only screen and (min-width: 56.25em) {
+  .page {
     padding-left: 10%;
   }
 }
